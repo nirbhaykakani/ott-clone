@@ -7,7 +7,7 @@ function Navigationbar(){
     return (
     <>
         <Container>
-            <Navbar /*style={{ color: "white", backgroundColor: "gray" }} expand="lg"*/>
+            <Navbar >
                 <Navbar.Brand href="/">Prime Video</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
