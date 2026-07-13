@@ -7,6 +7,9 @@ function Sports(){
         <div>
             <Navigationbar />
             <CarouselSports />
+            <br />
+            <br />
+            
             <CardSports />
         </div>
     );

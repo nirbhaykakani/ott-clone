@@ -7,14 +7,14 @@ function CarouselTvshows(){
         <div>
             <Carousel>
                 <Carousel.Item>
-                    <img className="d-block w-100" src={Panchayat} alt="Panchayat"></img>
+                    <img className="d-block w-100" src={Panchayat} alt="Panchayat" style={{height:'600px'}}></img>
                     <Carousel.Caption>
                         <h5>Panchayat</h5>
                         <p>A TVF Production</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-100" src={Pritam_and_pedro} alt="Pritam_and_pedro"></img>
+                    <img className="d-block w-100" src={Pritam_and_pedro} alt="Pritam_and_pedro" style={{height:'600px'}}></img>
                     <Carousel.Caption>
                         <h5>Pritam and Pedro</h5>
                         <p>Rajkumar Hirani</p>

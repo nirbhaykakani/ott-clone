@@ -7,14 +7,14 @@ function CarouselSports(){
         <div>
             <Carousel>
                 <Carousel.Item>
-                    <img className="d-block w-100" src={IccWorldCup} alt="IccWorldCup"></img>
+                    <img className="d-block w-100" src={IccWorldCup} alt="IccWorldCup" style={{height:'600px'}}></img>
                     <Carousel.Caption>
                         <h5>ICC World Cup</h5>
                         <p>Cricket World Cup</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-100" src={FifaWorldCup } alt="FifaWorldCup"></img>
+                    <img className="d-block w-100" src={FifaWorldCup } alt="FifaWorldCup" style={{height:'600px'}}></img>
                     <Carousel.Caption>
                         <h5>FIFA World Cup</h5>
                         <p>Football World Cup</p>

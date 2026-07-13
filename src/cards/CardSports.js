@@ -8,10 +8,11 @@ import { Row } from 'react-bootstrap';
 function CardSports(){
     return(
         <div>
+            <br />
             <Row className="d-flex justify-content-start gap-3">
                 <Col xs="auto">
                     <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={IccWorldCupCard} alt="Icc World Cup Card" />
+                    <Card.Img variant="top" src={IccWorldCupCard} alt="Icc World Cup Card" style={{height:'400px'}}/>
                     <Card.Body>
                         <Card.Title>ICC World Cup</Card.Title>
                         <Card.Text>
@@ -22,7 +23,7 @@ function CardSports(){
                 </Col>
                 <Col xs="auto">
                     <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={FifaWorldCupCard} alt="DhurandharCard" />
+                        <Card.Img variant="top" src={FifaWorldCupCard} alt="DhurandharCard" style={{height:'400px'}}/>
                         <Card.Body>
                             <Card.Title>FIFA WorldCup</Card.Title>
                             <Card.Text>

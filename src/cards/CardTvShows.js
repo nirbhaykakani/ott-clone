@@ -8,10 +8,11 @@ import { Row } from 'react-bootstrap';
 function CardTvShows(){
     return(
         <div>
+            <br />
             <Row className="d-flex justify-content-start gap-3">
                 <Col xs="auto">
                     <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={PanchayatCard} alt="Panchayat" />
+                    <Card.Img variant="top" src={PanchayatCard} alt="Panchayat" style={{height:'400px'}}/>
                     <Card.Body>
                         <Card.Title>Panchayat</Card.Title>
                         <Card.Text>
@@ -22,7 +23,7 @@ function CardTvShows(){
                 </Col>
                 <Col xs="auto">
                     <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={DhurandharCard} alt="DhurandharCard" />
+                        <Card.Img variant="top" src={DhurandharCard} alt="DhurandharCard" style={{height:'400px'}}/>
                         <Card.Body>
                             <Card.Title>Pritam and Pedro</Card.Title>
                             <Card.Text>

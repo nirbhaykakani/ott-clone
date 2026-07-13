@@ -7,14 +7,14 @@ function CarouselMovie(){
         <div>
             <Carousel>
                 <Carousel.Item>
-                    <img className="d-block w-100" src={rrrPoster} alt="RRR"></img>
+                    <img className="d-block w-100" src={rrrPoster} alt="RRR" style={{height:'600px'}}></img>
                     <Carousel.Caption>
                         <h5>RRR</h5>
                         <p>Rise,Roar,Revolt</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-100" src={dhurandhar} alt="Dhurandhar"></img>
+                    <img className="d-block w-100" src={dhurandhar} alt="Dhurandhar" style={{height:'600px'}}></img>
                     <Carousel.Caption>
                         <h5>Dhurandhar</h5>
                         <p>Aditya Dhar Movie</p>

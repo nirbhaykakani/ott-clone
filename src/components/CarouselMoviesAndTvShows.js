@@ -9,44 +9,44 @@ import FifaWorldCup from '../sports/fifaworldcup.jpg';
 function CarouselMoviesAndTvShows(){
     return(
         <div>
-            <Carousel style={{height:'60px'}}>
+            <Carousel >
                 <Carousel.Item>
-                    <img className="d-block w-100" src={rrrPoster} alt="RRR"></img>
+                    <img className="d-block w-100" src={rrrPoster} alt="RRR" style={{height:'600px'}}></img>
                     <Carousel.Caption>
                         <h5>RRR</h5>
                         <p>Rise,Roar,Revolt</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-100" src={dhurandhar} alt="Dhurandhar"></img>
+                    <img className="d-block w-100" src={dhurandhar} alt="Dhurandhar" style={{height:'600px'}}></img>
                     <Carousel.Caption>
                         <h5>Dhurandhar</h5>
                         <p>Aditya Dhar Movie</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-100" src={Panchayat} alt="Panchayat"></img>
+                    <img className="d-block w-100" src={Panchayat} alt="Panchayat" style={{height:'600px'}}></img>
                     <Carousel.Caption>
                         <h5>Panchayat</h5>
                         <p>A TVF Production</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-100" src={Pritam_and_pedro} alt="Pritam_and_pedro"></img>
+                    <img className="d-block w-100" src={Pritam_and_pedro} alt="Pritam_and_pedro" style={{height:'600px'}}></img>
                     <Carousel.Caption>
                         <h5>Pritam and Pedro</h5>
                         <p>Rajkumar Hirani</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-100" src={IccWorldCup} alt="IccWorldCup"></img>
+                    <img className="d-block w-100" src={IccWorldCup} alt="IccWorldCup" style={{height:'600px'}}></img>
                     <Carousel.Caption>
                         <h5>ICC World Cup</h5>
                         <p>Cricket World Cup</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-100" src={FifaWorldCup } alt="FifaWorldCup"></img>
+                    <img className="d-block w-100" src={FifaWorldCup } alt="FifaWorldCup" style={{height:'600px'}}></img>
                     <Carousel.Caption>
                         <h5>FIFA World Cup</h5>
                         <p>Football World Cup</p>

@@ -9,7 +9,6 @@ function Tvshows(){
             <CarouselTvshows />
             <br />
             <br />
-            <br />
             <CardTvShows />
         </div>
     );

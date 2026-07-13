@@ -8,10 +8,11 @@ import { Row } from 'react-bootstrap';
 function CardMovie(){
     return(
     <div>
+        <br />
         <Row className="d-flex justify-content-start gap-3">
             <Col xs="auto">
-                <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={RRRCard} alt="RRR Movie Poster" />
+                <Card style={{ width: '288px' }}>
+                <Card.Img variant="top" src={RRRCard} alt="RRR Movie Poster" style={{height:'420px'}}/>
                 <Card.Body>
                     <Card.Title>RRR</Card.Title>
                     <Card.Text>
@@ -21,8 +22,8 @@ function CardMovie(){
                 </Card>
             </Col>
             <Col xs="auto">
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={DhurandharCard} alt="DhurandharCard" />
+                <Card style={{ width: '288px' }}>
+                    <Card.Img variant="top" src={DhurandharCard} alt="DhurandharCard" style={{height:'420px'}}/>
                     <Card.Body>
                         <Card.Title>Dhurandhar</Card.Title>
                         <Card.Text>

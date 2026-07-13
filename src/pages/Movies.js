@@ -9,7 +9,6 @@ function Movies(){
             <CarouselMovie />
             <br />
             <br />
-            <br />
             <CardMovie />
         </div>
     );
