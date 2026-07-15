@@ -1,38 +1,68 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import PanchayatCard from '../movies/panchayat_card.jpg';
-import DhurandharCard from '../tvshows/pritam_and_pedro_card.avif';
-import { Col } from 'react-bootstrap';
+import PritamAndPedroCard from '../tvshows/pritam_and_pedro_card.avif';
+import { Col, Container } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
+import React, { useState } from "react";
+import ApiCall from "../apicall/ApiCall";
 
 function CardTvShows(){
+    const [showUser, setShowUser] = useState(null);
+    const cards = [
+        {
+            title: "Panchayat",
+            image: PanchayatCard,
+            text: "A TVF Production",
+            component: <ApiCall userId={1}/>
+        },
+        {
+            title: "Pritam and Pedro",
+            image: PritamAndPedroCard,
+            text: "Rajkumar Hirani",
+            component: <ApiCall userId={2} />
+        }
+    ]
     return(
         <div>
             <br />
+            <Container>
             <Row className="d-flex justify-content-start gap-3">
-                <Col xs="auto">
-                    <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={PanchayatCard} alt="Panchayat" style={{height:'400px'}}/>
-                    <Card.Body>
-                        <Card.Title>Panchayat</Card.Title>
-                        <Card.Text>
-                            A TVF Production
-                        </Card.Text>
-                    </Card.Body>
-                    </Card>
-                </Col>
-                <Col xs="auto">
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={DhurandharCard} alt="DhurandharCard" style={{height:'400px'}}/>
-                        <Card.Body>
-                            <Card.Title>Pritam and Pedro</Card.Title>
-                            <Card.Text>
-                                Rajkumar Hirani
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
+                {cards.map((card, index) => (
+                    <Col xs="auto" key={index}>
+                        <br />
+                        <Card style={{ width: "18rem" }}>
+                            
+                            <Card.Img
+                                variant="top"
+                                src={card.image}
+                                alt={card.title}
+                                style={{ height: "400px" }}
+                            />
+
+                            <Card.Body>
+                                <Card.Title>{card.title}</Card.Title>
+
+                                <Card.Text>
+                                    {card.text}
+                                </Card.Text>
+
+                                <Button
+                                    onClick={() =>
+                                        setShowUser(showUser === index ? null : index)
+                                    }
+                                >
+                                    {showUser === index ? "Hide" : "Show"}
+                                </Button>
+                            </Card.Body>
+
+                            {showUser === index && card.component}
+                        </Card>
+                    </Col>
+                ))}
+                
             </Row>
+            </Container>
         </div>
     );
 }

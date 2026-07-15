@@ -1,35 +1,19 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import RRRCard from '../movies/rrr_card.jpg';
-import DhurandharCard from '../movies/dhurandhar_card_wallpaper.webp'
-import { Col, Container } from 'react-bootstrap';
-import { Row } from 'react-bootstrap';
-import React, {  useState } from "react";
-import ApiCall from "../apicall/ApiCall";
+import React, { useState } from "react";
+import { Button, Card, Container, Row, Col } from "react-bootstrap";
 
-function CardMovie(){
+import { cards } from "../lib/data";
+
+function CardHome() {
+
     const [showUser, setShowUser] = useState(null);
-    
-    const cards = [
-        {
-            title:"RRR",
-            image: RRRCard,
-            text:"Rise,Roar,Revolt",
-            component:<ApiCall userId={1}/>
-        },
-        {
-            title:"Dhurandhar",
-            image: DhurandharCard,
-            text:"Aditya Dhar Film",
-            component:<ApiCall userId={2}/>
-        }
-    ]
 
-    return(
-    <div>
-        <br />
+    return (
+        
         <Container>
-           <Row>
+            
+            <h1 className="my-4">Trending Movies and TV Shows</h1>
+
+            <Row>
                 {cards.map((card, index) => (
                     <Col xs="auto" key={index}>
                         <br />
@@ -64,7 +48,7 @@ function CardMovie(){
                 ))}
             </Row>
         </Container>
-    </div>);
+    );
 }
 
-export default CardMovie;
+export default CardHome;
