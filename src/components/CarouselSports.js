@@ -3,23 +3,28 @@ import IccWorldCup from '../sports/worldcup.jpg';
 import FifaWorldCup from '../sports/fifaworldcup.jpg';
 
 function CarouselSports(){
+    const carousels=[{
+        poster:IccWorldCup,
+        title:"ICC World Cup",
+        captionLine:"Cricket World Cup"
+    },{
+        poster:FifaWorldCup,
+        title:"FIFA World Cup",
+        captionLine:"Football World Cup"
+    }
+    ];
     return(
         <div>
             <Carousel>
-                <Carousel.Item>
-                    <img className="d-block w-100" src={IccWorldCup} alt="IccWorldCup" style={{height:'600px'}}></img>
+                 {carousels.map((carousel,index) =>
+                (<Carousel.Item>
+                    <img className="d-block w-100" src={carousel.poster} alt={carousel.title} style={{height:'600px'}}></img>
                     <Carousel.Caption>
-                        <h5>ICC World Cup</h5>
-                        <p>Cricket World Cup</p>
+                        <h5>{carousel.title}</h5>
+                        <p>{carousel.captionLine}</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
-                    <img className="d-block w-100" src={FifaWorldCup } alt="FifaWorldCup" style={{height:'600px'}}></img>
-                    <Carousel.Caption>
-                        <h5>FIFA World Cup</h5>
-                        <p>Football World Cup</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
+                ))}
             </Carousel>
         </div>
     );
