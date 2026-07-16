@@ -1,68 +1,15 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import RRRCard from '../movies/rrr_card.jpg';
-import DhurandharCard from '../movies/dhurandhar_card_wallpaper.webp'
-import { Col, Container } from 'react-bootstrap';
-import { Row } from 'react-bootstrap';
-import React, {  useState } from "react";
-import ApiCall from "../apicall/ApiCall";
+import {  Container } from 'react-bootstrap';
+import React from "react";
+import CardList from "./CardList";
+import { movieCards } from '../lib/movieData';
 
 function CardMovie(){
-    const [showUser, setShowUser] = useState(null);
-    
-    const cards = [
-        {
-            title:"RRR",
-            image: RRRCard,
-            text:"Rise,Roar,Revolt",
-            component:<ApiCall userId={1}/>
-        },
-        {
-            title:"Dhurandhar",
-            image: DhurandharCard,
-            text:"Aditya Dhar Film",
-            component:<ApiCall userId={2}/>
-        }
-    ]
 
     return(
     <div>
-        <br />
+        <h1 className="my-4">Trending Movies </h1>
         <Container>
-           <Row>
-                {cards.map((card, index) => (
-                    <Col xs="auto" key={index}>
-                        <br />
-                        <Card style={{ width: "18rem" }}>
-                            
-                            <Card.Img
-                                variant="top"
-                                src={card.image}
-                                alt={card.title}
-                                style={{ height: "400px" }}
-                            />
-
-                            <Card.Body>
-                                <Card.Title>{card.title}</Card.Title>
-
-                                <Card.Text>
-                                    {card.text}
-                                </Card.Text>
-
-                                <Button
-                                    onClick={() =>
-                                        setShowUser(showUser === index ? null : index)
-                                    }
-                                >
-                                    {showUser === index ? "Hide" : "Show"}
-                                </Button>
-                            </Card.Body>
-
-                            {showUser === index && card.component}
-                        </Card>
-                    </Col>
-                ))}
-            </Row>
+           <CardList cards={movieCards} />;
         </Container>
     </div>);
 }
