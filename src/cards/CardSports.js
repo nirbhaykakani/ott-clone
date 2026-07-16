@@ -7,8 +7,8 @@ function CardSports(){
     
     return(
         <div>
-            <h1 className="my-4">Trending Sports</h1>
             <Container>
+                <h1 className="my-4">Trending Sports</h1>
                 <CardList cards={sportsCards} />;
             </Container>
         </div>

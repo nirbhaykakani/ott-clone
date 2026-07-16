@@ -8,8 +8,8 @@ function CardTvShows(){
    
     return(
         <div>
-            <h1 className="my-4">Trending TV Shows</h1>
             <Container>
+                <h1 className="my-4">Trending TV Shows</h1>
                 <CardList cards={tvCards} />;
             </Container>
         </div>

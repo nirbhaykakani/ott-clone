@@ -7,8 +7,8 @@ function CardMovie(){
 
     return(
     <div>
-        <h1 className="my-4">Trending Movies </h1>
         <Container>
+            <h1 className="my-4">Trending Movies </h1>
            <CardList cards={movieCards} />;
         </Container>
     </div>);
