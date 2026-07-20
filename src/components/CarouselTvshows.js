@@ -4,16 +4,16 @@ import Pritam_and_pedro from '../tvshows/pritam_and_pedro.webp';
 
 function CarouselTvshows(){
     const carousels=[
-            {
-                poster:Panchayat,
-                title:"Panchayat",
-                captionLine:"A TVF Production"
-            },
-            {
-                poster:Pritam_and_pedro,
-                title:"Pritam and Pedro",
-                captionLine:"Rajkumar Hirani"
-            }
+        {
+            poster:Panchayat,
+            title:"Panchayat",
+            captionLine:"A TVF Production"
+        },
+        {
+            poster:Pritam_and_pedro,
+            title:"Pritam and Pedro",
+            captionLine:"Rajkumar Hirani"
+        }
     ];
     return(
         <div>

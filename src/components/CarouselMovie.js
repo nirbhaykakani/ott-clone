@@ -17,9 +17,7 @@ function CarouselMovie(){
     return(
         <div>
             <Carousel>
-
-                {carousels.map((carousel,index) =>
-                (
+                {carousels.map((carousel,index) => (
                     <Carousel.Item>
                     <img className="d-block w-100" src={carousel.poster} alt={carousel.title} style={{height:'600px'}}></img>
                     <Carousel.Caption>
