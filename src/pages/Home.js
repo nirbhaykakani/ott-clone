@@ -1,6 +1,5 @@
-import Button from "react-bootstrap/Button";
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+
+import React from "react";
 import Navigationbar from "../components/Navigationbar";
 import CarouselMovie from "../components/CarouselMoviesAndTvShows";
 import CardHome from "../cards/CardHome";
@@ -12,8 +11,8 @@ function Home(){
             <Navigationbar />
             <CarouselMovie />
             <br />
-            <br />
             <CardHome />
+            <br />
         </div>
     );
 }

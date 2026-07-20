@@ -9,7 +9,7 @@ function CardHome() {
         <div>
             <Container>
                 <h1 className="my-4">Trending Movies and TV Shows</h1>
-                <CardList cards={cards} />;
+                <CardList cards={cards} />
             </Container>
         </div>
     );

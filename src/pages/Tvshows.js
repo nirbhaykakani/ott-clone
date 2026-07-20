@@ -8,8 +8,8 @@ function Tvshows(){
             <Navigationbar />
             <CarouselTvshows />
             <br />
-            <br />
             <CardTvShows />
+            <br />
         </div>
     );
 }

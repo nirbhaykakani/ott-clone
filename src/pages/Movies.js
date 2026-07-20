@@ -8,8 +8,8 @@ function Movies(){
             <Navigationbar />
             <CarouselMovie />
             <br />
-            <br />
             <CardMovie />
+            <br />
         </div>
     );
 }

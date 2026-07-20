@@ -9,7 +9,7 @@ function CardSports(){
         <div>
             <Container>
                 <h1 className="my-4">Trending Sports</h1>
-                <CardList cards={sportsCards} />;
+                <CardList cards={sportsCards} />
             </Container>
         </div>
     );
