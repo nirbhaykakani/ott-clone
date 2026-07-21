@@ -1,16 +1,12 @@
-import Navigationbar from "../components/Navigationbar";
+
+import React from "react";
 import CarouselMovie from "../components/CarouselMovie";
 import CardMovie from "../cards/CardMovie";
+import PageLayout from "../pages/PageLayout";
 
 function Movies(){
     return(
-        <div>
-            <Navigationbar />
-            <CarouselMovie />
-            <br />
-            <CardMovie />
-            <br />
-        </div>
+        <PageLayout CarouselComponent={CarouselMovie} CardComponent={CardMovie} />
     );
 }
 

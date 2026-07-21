@@ -6,6 +6,13 @@ import FifaWorldCupCard from "../sports/fifa_world_cup_card.jpg";
 import RRRCard from "../movies/rrr_card.jpg";
 import DhurandharCard from "../movies/dhurandhar_card_wallpaper.webp";
 
+import rrrPoster from '../movies/rrr_poster.jpg';
+import dhurandharPoster from '../movies/dhurandhar.avif';
+import Panchayat from '../tvshows/panchayat.jpg';
+import Pritam_and_pedro from '../tvshows/pritam_and_pedro.webp';
+import IccWorldCup from '../sports/worldcup.jpg';
+import FifaWorldCup from '../sports/fifaworldcup.jpg';
+
 import ApiCall from "../apicall/ApiCall";
 
 export const cards = [
@@ -46,3 +53,36 @@ export const cards = [
             component: <ApiCall userId={6} />
         }
     ];
+
+    export const carousels=[
+            {
+                poster:rrrPoster,
+                title:"RRR",
+                captionLine:"Rise,Roar,Revolt"
+            },
+            {
+                poster:dhurandharPoster,
+                title:"Dhurandhar",
+                captionLine:"Aditya Dhar Movie"
+            },
+            {
+                poster:IccWorldCup,
+                title:"ICC World Cup",
+                captionLine:"Cricket World Cup"
+            },
+            {
+                poster:FifaWorldCup,
+                title:"FIFA World Cup",
+                captionLine:"Football World Cup"
+            },
+            {
+                poster:Panchayat,
+                title:"Panchayat",
+                captionLine:"A TVF Production"
+            },
+            {
+                poster:Pritam_and_pedro,
+                title:"Pritam and Pedro",
+                captionLine:"Rajkumar Hirani"
+            }
+        ];

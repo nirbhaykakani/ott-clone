@@ -1,16 +1,12 @@
-import Navigationbar from "../components/Navigationbar";
+
+import React from "react";
 import CarouselTvshows from "../components/CarouselTvshows";
 import CardTvShows from "../cards/CardTvShows";
+import PageLayout from "../pages/PageLayout";
 
 function Tvshows(){
     return(
-        <div>
-            <Navigationbar />
-            <CarouselTvshows />
-            <br />
-            <CardTvShows />
-            <br />
-        </div>
+        <PageLayout CarouselComponent={CarouselTvshows} CardComponent={CardTvShows} />
     );
 }
 

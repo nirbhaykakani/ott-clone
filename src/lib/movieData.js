@@ -2,6 +2,8 @@ import ApiCall from "../apicall/ApiCall";
 
 import RRRCard from "../movies/rrr_card.jpg";
 import DhurandharCard from "../movies/dhurandhar_card_wallpaper.webp";
+import rrrPoster from '../movies/rrr_poster.jpg';
+import dhurandharPoster from '../movies/dhurandhar.avif';
 
 export const movieCards = [
     {
@@ -17,3 +19,15 @@ export const movieCards = [
         component: <ApiCall userId={2} />
     }
 ];
+
+export const movieCarousels=[{
+            poster:rrrPoster,
+            title:"RRR",
+            captionLine:"Rise,Roar,Revolt"
+        },
+        {
+            poster:dhurandharPoster,
+            title:"Dhurandhar",
+            captionLine:"Aditya Dhar Movie"
+        }
+    ];

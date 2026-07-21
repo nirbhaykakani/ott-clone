@@ -1,16 +1,12 @@
-import Navigationbar from "../components/Navigationbar";
+
+import React from "react";
 import CarouselSports from "../components/CarouselSports";
 import CardSports from "../cards/CardSports";
+import PageLayout from "../pages/PageLayout";
 
 function Sports(){
     return(
-        <div>
-            <Navigationbar />
-            <CarouselSports />
-            <br />     
-            <CardSports />
-            <br />
-        </div>
+       <PageLayout CarouselComponent={CarouselSports} CardComponent={CardSports} />
     );
 }
 

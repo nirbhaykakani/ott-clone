@@ -1,19 +1,13 @@
 
 import React from "react";
-import Navigationbar from "../components/Navigationbar";
 import CarouselMovie from "../components/CarouselMoviesAndTvShows";
 import CardHome from "../cards/CardHome";
+import PageLayout from "../pages/PageLayout";
 
 function Home(){
     
     return(
-        <div>
-            <Navigationbar />
-            <CarouselMovie />
-            <br />
-            <CardHome />
-            <br />
-        </div>
+        <PageLayout CarouselComponent={CarouselMovie} CardComponent={CardHome} />
     );
 }
 
