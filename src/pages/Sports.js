@@ -1,5 +1,4 @@
 
-import React from "react";
 import CarouselSports from "../components/CarouselSports";
 import CardSports from "../cards/CardSports";
 import PageLayout from "../pages/PageLayout";

@@ -1,5 +1,4 @@
 
-import React from "react";
 import CarouselMovie from "../components/CarouselMovie";
 import CardMovie from "../cards/CardMovie";
 import PageLayout from "../pages/PageLayout";
