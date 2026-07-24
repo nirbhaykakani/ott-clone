@@ -7,7 +7,6 @@ function PageLayout({ CarouselComponent, CardComponent }) {
         <div>
             <Navigationbar />
             <CarouselComponent />
-            <br />
             <CardComponent />
             <br />
         </div>
